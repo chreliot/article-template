@@ -1,0 +1,43 @@
+\documentclass{article}
+
+% METADATA
+
+\title{TBD}
+\author{Christopher H. Eliot}
+\date{\today}
+
+% TYPOGRAPHY
+
+\usepackage{fontspec}
+\setmainfont{Adobe Caslon Pro}
+\usepackage{microtype}
+
+% FORMAT
+
+\usepackage{enumitem}
+
+% CITATION AND NAME AUTHORITY
+
+\usepackage{nameauth}
+\usepackage{biblatex-chicago}
+
+% Mention an author's name 
+\newrobustcmd*{\authorname}{\AtNextCite{\DeclareNameAlias{labelname}{given-family}}\citeauthor}
+
+% THIS ARTICLE'S CONTENT
+
+% NAMEAUTH NAMES
+% \begin{nameauth}
+	% \< shorthand & First & Lst & >
+% \end{nameauth}	
+
+% BIBLATEX NAMES
+% \newcommand{\eliot}[1]{\authorname{Eliot2011}}
+
+% BODY
+
+\begin{document}
+
+text.
+
+\end{document}
