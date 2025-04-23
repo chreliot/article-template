@@ -1,6 +1,6 @@
 # article-template
 
-This is my template for new articles. The main template file is “article.tex.” It can be renamed.
+This is my template for new articles. The main template file is “**article.tex**.” It can be renamed.
 
 ## What's in the template's main .tex file
 
@@ -16,7 +16,6 @@ This is my template for new articles. The main template file is “article.tex.�
  2. A [`.latexmk`] file, so that I can typeset with just `latexmk article` (or whatever the article name has become).
  3. Build commands for use in the fabulous Panic Nova text editor.
  4. A `mybuild.mk4` file for outputting HTML (see below).
-
 
 ## Cloning this template to use locally
 
