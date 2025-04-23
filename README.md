@@ -4,6 +4,8 @@ This is my template for new articles. The main template file is “**article.tex
 
 ## What's in the template's main .tex file
 
+The main template loads the following packages for configuring the article itself.
+
  1. [`biblatex-chicago` package](https://ctan.org/pkg/biblatex-chicago?lang=en) package for citations, configured to my preferences.
  2. [`nameauth` package](https://ctan.org/pkg/nameauth) for smart usage of names. Example: `\cd\ wrote a book expressing \cd's ideas.` becomes ”Charles Darwin wrote a book expressing Darwin's ideas.”
  3. [`csquotes` package](https://ctan.org/pkg/csquotes)
@@ -12,10 +14,12 @@ This is my template for new articles. The main template file is “**article.tex
 
 ## The other functional files in this repo
 
+There are other files in this repo that support processing, specifically typesetting (`latexmkrc`), git and GitHub (`gitignore`), output to HTML or ODT via make4ht (`mybuild.mk4`), and build commands that will be automatically used for push-of-the-button processing in the Panic Nova text-editor for MacOS (`.nova`):
+
  1. A [`.gitignore`] file, to keep the git repo clean, by keeping the temporary files from being added to them.
  2. A [`.latexmk`] file, so that I can typeset with just `latexmk article` (or whatever the article name has become).
- 3. Build commands for use in the fabulous Panic Nova text editor.
- 4. A `mybuild.mk4` file for outputting HTML (see below).
+ 3. Build commands in `.nova` for use in the fabulous and fun [Panic Nova](https://nova.app) text editor.
+ 4. A `mybuild.mk4` file for outputting HTML (see [below](https://github.com/chreliot/article-template/tree/main?tab=readme-ov-file#output-to-html-or-odt)).
 
 ## Cloning this template to use locally
 
