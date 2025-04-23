@@ -1,4 +1,5 @@
-\documentclass{article}
+\DocumentMetadata{}
+\documentclass[11pt]{article}
 
 % METADATA
 
@@ -6,38 +7,66 @@
 \author{Christopher H. Eliot}
 \date{\today}
 
+\usepackage{hyperref}
+\hypersetup{
+pdftitle={TBD},
+pdfauthor={Christopher H. Eliot},
+pdfkeywords={},
+pdflang={English}
+}
+
+% LAYOUT
+
+\usepackage[driver=luatex,letterpaper,margin=1.5in]{geometry}
+\usepackage{fancyhdr} \pagestyle{plain}
+% \fancyhead{} \fancyhead[LE,RO]{GAAC Agenda: \DTMusedate{meetingdate}}
+
+% TODO: Add header/footer formatting ↑
+
+% TODO: COnsider adding \usepackage{ifdraft} and then making a header date "Draft of date" info line contingent on the whole being a draft. But check LaTeX Companion about this.
+
+\usepackage{ragged2e}
+
 % TYPOGRAPHY
 
 \usepackage{fontspec}
 \setmainfont{Adobe Caslon Pro}
 \usepackage{microtype}
+\usepackage[american]{babel}
 
 % FORMAT
 
 \usepackage{enumitem}
+\usepackage{csquotes}
 
 % CITATION AND NAME AUTHORITY
 
 \usepackage{nameauth}
-\usepackage{biblatex-chicago}
+\usepackage[authordate,backend=biber,isbn=false,doi=true,bibencoding=inputenc,cmsdate=both,compresspages=true,maxbibnames=7]{biblatex-chicago}
+\SetCiteCommand{\autocite} % for using \textcquote{citekey}{text} from the csquotes package with biblatex-chicago
 
-% Mention an author's name 
-\newrobustcmd*{\authorname}{\AtNextCite{\DeclareNameAlias{labelname}{given-family}}\citeauthor}
+\addbibresource{mine.bib}
 
-% THIS ARTICLE'S CONTENT
+% THIS ARTICLE'S NAME-REFERENCE SET-UP
 
 % NAMEAUTH NAMES
-% \begin{nameauth}
-	% \< shorthand & First & Lst & >
-% \end{nameauth}	
-
-% BIBLATEX NAMES
-% \newcommand{\eliot}[1]{\authorname{Eliot2011}}
+\begin{nameauth}
+	\< rlm & Roberta & Millstein & >
+	% \< shorthand & First & Last & >
+\end{nameauth}	
 
 % BODY
 
 \begin{document}
 
-text.
+\maketitle
+
+\section*{First section}
+
+
+% References
+
+\RaggedRight \sloppy
+\printbibliography
 
 \end{document}
