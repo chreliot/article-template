@@ -2,6 +2,7 @@
 *.4as
 *.css
 *.tmp
+*.DS_Store
 
 ## Additional binary files (CE)
 *.docx
