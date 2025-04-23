@@ -1,16 +1,21 @@
 # article-template
 
-This is my template for new articles. 
+This is my template for new articles. The main template file is “article.tex.” It can be renamed.
 
 ## What's in the template's main .tex file
 
  1. [`biblatex-chicago` package](https://ctan.org/pkg/biblatex-chicago?lang=en) package for citations, configured to my preferences.
  2. [`nameauth` package](https://ctan.org/pkg/nameauth) for smart usage of names. Example: `\cd\ wrote a book expressing \cd's ideas.` becomes ”Charles Darwin wrote a book expressing Darwin's ideas.”
- 3. [`csquotes` package]
- 4. [`hyperref` package] `hypersetup` for including PDF metadata.
- 5. [`fontspec` package] for Unicode/UTF-8 input and processing with LuaTeX.
+ 3. [`csquotes` package](https://ctan.org/pkg/csquotes)
+ 4. [`hyperref` package](https://ctan.org/pkg/hyperref) `hypersetup` for including PDF metadata.
+ 5. [`fontspec` package](https://ctan.org/pkg/fontspec) for Unicode/UTF-8 input and processing with LuaTeX.
 
-## What else is in this repo
+## The other functional files in this repo
+
+ 1. A [`.gitignore`] file, to keep the git repo clean, by keeping the temporary files from being added to them.
+ 2. A [`.latexmk`] file, so that I can typeset with just `latexmk article` (or whatever the article name has become).
+ 3. Build commands for use in the fabulous Panic Nova text editor.
+ 4. A `mybuild.mk4` file for outputting HTML (see below).
 
 
 ## Cloning this template to use locally
