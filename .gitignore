@@ -1,3 +1,12 @@
+## Additional processing files, especially from tex4ht (CE)
+*.4as
+*.css
+*.tmp
+
+## Additional binary files (CE)
+*.docx
+*.odt
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
