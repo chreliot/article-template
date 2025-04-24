@@ -56,17 +56,15 @@ pdflang={English}
 % \usepackage{booktabs} % turn on to use tables
 % \usepackage{siunitx}  % turn on to use automatic units
 
-% CITATION AND NAME AUTHORITY
+% CITATIONS
 
-\usepackage{nameauth}
 \usepackage[authordate,backend=biber,isbn=false,doi=true,bibencoding=inputenc,cmsdate=both,compresspages=true,maxbibnames=7]{biblatex-chicago}
 \SetCiteCommand{\autocite} % for using \textcquote{citekey}{text} from the csquotes package with biblatex-chicago
-
 \addbibresource{mine.bib}
 
-% THIS ARTICLE'S NAME-REFERENCE SET-UP
+% NAMES
 
-% NAMEAUTH NAMES
+\usepackage{nameauth}
 \begin{nameauth}
 	% \< shorthand & First & Last & >
 \end{nameauth}	
