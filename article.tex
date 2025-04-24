@@ -18,8 +18,8 @@ pdflang={English}
 % LAYOUT
 
 \usepackage[driver=luatex,letterpaper,margin=1.5in]{geometry}
-\usepackage{fancyhdr} \pagestyle{plain}
-% \fancyhead{} \fancyhead[LE,RO]{GAAC Agenda: \DTMusedate{meetingdate}}
+\usepackage{fancyhdr} \pagestyle{plain} \fancyhead{} 
+\fancyhead[R]{\textsc{Draft of \today}
 
 % TODO: Add header/footer formatting ↑
 
@@ -36,9 +36,10 @@ pdflang={English}
 			 BoldFont       = ACaslonPro-Semibold.otf,
 			 BoldItalicFont = ACaslonPro-SemiboldItalic.otf]
 \setsansfont{Gotham}
-			[ItalicFont     = .otf,
-             BoldFont       = .otf,
-             BoldItalicFont = .otf]
+			[Upright        = Gotham-Light.otf
+			 ItalicFont     = Gotham-LightItalic.otf,
+             BoldFont       = Gotham-Bold.otf,
+             BoldItalicFont = Gotham-BoldItalic.otf]
 \setmonofont{Fira Mono}
 
 \usepackage{csquotes}
